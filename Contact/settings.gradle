@@ -1,0 +1,4 @@
+include ':bootupbroadcast'
+include ':contactviwer'
+include ':app'
+rootProject.name = "Contact"

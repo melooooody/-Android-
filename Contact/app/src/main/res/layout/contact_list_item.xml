@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    >
+
+    <ImageView
+        android:id="@+id/contactHead"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@mipmap/head"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="5dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/ct_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓         名："
+        android:textSize="11sp"
+        android:textColor="@color/teal_200"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="80dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="145dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/ct_phoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系电话："
+        android:textSize="11sp"
+        android:textColor="@color/teal_200"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="80dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/phoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="145dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/ct_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="公         司："
+        android:textSize="11sp"
+        android:textColor="@color/teal_200"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="80dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="145dp"
+        >
+
+    </TextView>
+
+</RelativeLayout>

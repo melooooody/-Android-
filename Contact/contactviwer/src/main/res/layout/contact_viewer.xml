@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_name"
+        android:textSize="15sp"
+        android:textColor="#4BDBEE"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:text="姓              名："
+        android:layout_marginStart="50dp">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name"
+        android:id="@+id/txt_company"
+        android:textSize="15sp"
+        android:textColor="#4BDBEE"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="50dp"
+        android:text="公     司     名：">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_company"
+        android:id="@+id/txt_phoneNum"
+        android:textSize="15sp"
+        android:textColor="#4BDBEE"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:text="联  系  电  话："
+        android:layout_marginStart="50dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_phoneNum"
+        android:id="@+id/isVip"
+        android:textSize="15sp"
+        android:textColor="#4BDBEE"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:text="是 否 为  VIP：">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:inputType="text"
+        android:textColor="#F40"
+        android:textSize="10sp"
+        android:maxLength="10"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/txt_name"
+        android:id="@+id/edit_name"
+        android:layout_toEndOf="@+id/txt_name">
+
+    </EditText>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_name"
+        android:inputType="text"
+        android:textColor="#F40"
+        android:textSize="10sp"
+        android:maxLength="10"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/txt_company"
+        android:id="@+id/edit_company"
+        android:layout_toEndOf="@+id/txt_company">
+
+    </EditText>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_company"
+        android:inputType="text"
+        android:textColor="#F40"
+        android:textSize="10sp"
+        android:maxLength="10"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/txt_phoneNum"
+        android:id="@+id/edit_phoneNum"
+        android:layout_toEndOf="@+id/txt_phoneNum">
+
+    </EditText>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_VIP"
+        android:layout_below="@+id/edit_phoneNum"
+        android:layout_toRightOf="@+id/isVip"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:checkedButton="@id/vip_no"
+        android:layout_toEndOf="@+id/isVip">
+
+        <RadioButton
+            android:id="@+id/vip_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="是"
+            android:textSize="15sp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vip_no"
+            android:layout_marginTop="1dp"
+            android:text="否"
+            android:textSize="15sp"/>
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buts"
+        android:layout_below="@id/isVip"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/showAll"
+            android:text="显示全部"
+            android:textSize="10dp">
+
+        </Button>
+        <Button
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:text="添加联系人"
+            android:textSize="10dp">
+
+        </Button>
+        <Button
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/delete"
+            android:text="删除联系人"
+            android:textSize="10dp">
+
+        </Button>
+        <Button
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit"
+            android:text="编辑联系人"
+            android:textSize="10dp">
+
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewContact"
+        android:scrollbars="vertical"
+        android:layout_below="@id/buts">
+
+    </TextView>
+
+</RelativeLayout>
